@@ -47,21 +47,19 @@ public class Main {
         if (deliveryDistance <= 20 ){
             System.out.println("Потребуется дней: " + deliveryDay);
         }
-        else {
-            if (deliveryDistance > 20 && deliveryDistance <= 60){
+        else if (deliveryDistance > 20 && deliveryDistance <= 60){
             deliveryDay++;
             System.out.println("Потребуется дней: " + deliveryDay);
             }
-            else {
-                if (deliveryDistance > 60 && deliveryDistance <= 100){
+            else if (deliveryDistance > 60 && deliveryDistance <= 100){
                     deliveryDay+=2;
                     System.out.println("Потребуется дней: " + deliveryDay);
                 }
                 else {
                     System.out.println("Доставки нет");
                 }
-            }
-        }
+
+
 
         System.out.println(" ");
 
